@@ -10,7 +10,7 @@ $("button").on("click",function(){
     if (!started) {
         setTimeout(function(){
         $("button").hide(1000)
-        },100)
+        },500)
         //3. The h1 title starts out saying "Press A Key to Start", when the game has started, change this to say "Level 0".
         $("#level-title").text("Level " + level);
         nextSequence();
@@ -24,7 +24,7 @@ $(document).on("keypress",function() {
     if (!started) {
       setTimeout(function(){
         $("button").hide(1000)
-        },100)
+        },500)
       //3. The h1 title starts out saying "Press A Key to Start", when the game has started, change this to say "Level 0".
       $("#level-title").text("Level " + level);
       nextSequence();
