@@ -8,25 +8,28 @@ var level = 0
 // if the button clicked
 $("button").on("click",function(){
     if (!started) {
-  
+        setTimeout(function(){
+        $("button").hide(1000)
+        },100)
         //3. The h1 title starts out saying "Press A Key to Start", when the game has started, change this to say "Level 0".
         $("#level-title").text("Level " + level);
         nextSequence();
         userClickedPattern = []
         started = true;
-        $("button").hide(1000)
+        
       }
 })
 // check if the user clicked any key for the 1st time
 $(document).on("keypress",function() {
     if (!started) {
-  
+      setTimeout(function(){
+        $("button").hide(1000)
+        },100)
       //3. The h1 title starts out saying "Press A Key to Start", when the game has started, change this to say "Level 0".
       $("#level-title").text("Level " + level);
       nextSequence();
       userClickedPattern = []
-      started = true;
-      $("button").hide(1000)   
+      started = true;  
     }
   });
 // function to play sound
