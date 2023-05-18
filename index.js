@@ -14,6 +14,7 @@ $("button").on("click",function(){
         nextSequence();
         userClickedPattern = []
         started = true;
+        $("button").hide(1000)
       }
 })
 // check if the user clicked any key for the 1st time
@@ -59,6 +60,7 @@ function checkAnswer(currentLevel) {
       started = false;
       level = 0
       gamePattern = []
+      $("button").show(1000)
     }
 
 }
