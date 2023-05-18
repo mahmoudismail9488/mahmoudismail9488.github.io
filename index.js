@@ -26,6 +26,7 @@ $(document).on("keypress",function() {
       nextSequence();
       userClickedPattern = []
       started = true;
+      $("button").hide(1000)   
     }
   });
 // function to play sound
